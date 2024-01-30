@@ -46,7 +46,7 @@ export default async function Home() {
               </span>
               <DeleteButton habit={habit} />
             </div>
-            <Link href={`habito/${habit}`}>
+            <Link href={`habitos/${habit}`}>
               <section className="grid grid-cols-7 bg-neutral-800 rounded-md p-2">
                 {sortedWeekDays.map((day, index) => (
                   <div key={day} className="flex flex-col last:font-bold">
@@ -66,7 +66,7 @@ export default async function Home() {
         href="novo-habito"
         className="fixed text-center bottom-10 w-2/3 left-1/2 -translate-x-1/2 text-neutral-900 bg-[#45EDAD] font-display font-regular text-2xl p-2 rounded-md"
       >
-        novo hábito
+        Nova tarefa
       </Link>
     </main>
   );
